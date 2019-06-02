@@ -9,9 +9,6 @@
     z-index: 900; 
     background: white;
     border: 2px solid #a38b70;
- /*   background: rgba(120,55,150,.7);
-    box-shadow: 0 0 1px pink, 0 0 2px pink, 0 0 6px pink, 0 0 12px pink, inset 0 0 1px pink, inset 0 0 2px pink, inset 0 0 6px pink, inset 0 0 12px pink;
-*/
 }
 
 .poup input {
@@ -97,34 +94,6 @@ body {
   margin: 0 auto;
 }
 
-
-/*table {
-font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-font-size: 14px;
-border-collapse: collapse;
-text-align: center;
-}
-
-th, td:first-child {
-background: #AFCDE7;
-color: white;
-padding: 10px 20px;
-}
-
-th, td {
-border-style: solid;
-border-width: 0 1px 1px 0;
-border-color: white;
-}
-
-td {
-background: #D8E6F3;
-}
-
-th:first-child, td:first-child {
-text-align: left;
-}*/
-
 .section-title {
       margin: 0;
       margin-right: 180px;
@@ -186,21 +155,7 @@ table td:last-child {
     padding: 0;
     width: 146px;
 }
-/*
 
-.btn {
-}
-
-.btn:hover {
-  color: #8d745a;
-  border-color: #8d745a;
-}
-
-.btn:active {
-  color: rgba(141, 116, 90, 0.3);
-  border-color: #8d745a;
-}
-*/
 .btn {
   color: #ffffff;
   background-color: #a38b70;
@@ -264,39 +219,3 @@ table td:last-child {
 .btn-delete:focus {
     outline: none;
 }
-
-/*
-body {    
-    background: url(retrowave.jpg) no-repeat;
-    background-position: center 0%;
-    background-size: cover;
-}
-
-.main-table tbody {
-    background: rgba(120,55,150,.7);
-    box-shadow: 0 0 1px pink, 0 0 2px pink, 0 0 6px pink, 0 0 12px pink, inset 0 0 1px pink, inset 0 0 2px pink, inset 0 0 6px pink, inset 0 0 12px pink;
-}
-
-.main-table td {
-    color: white;
-    padding: 0 0 5px 10px;
-    height: 35px;
-}
-
-.main-table th {
-    background: rgba(38,8,66,0.7);
-    color: white;
-    padding: 0 0 5px 10px;
-}
-
-.close {
-    background: 0;
-    border: 0;
-    color: white;
-}
-
-.close:hover {
-    font-size: 16px;
-    color: pink;
-    transition: all 0.3s ease;
-}*/

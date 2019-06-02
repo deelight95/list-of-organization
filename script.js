@@ -1,3 +1,4 @@
+// Запуск модального окна
 $(document).ready(function(){
     $('.openwnd').click(function(){
         $('.poup').fadeIn();
@@ -5,12 +6,9 @@ $(document).ready(function(){
     $('.poup .close').click(function(){
         $('.poup').fadeOut();
     });
-    $('.poup .submit').click(function(){
-        alert("Нажата кнопка ''Действие ")
-    });
 });
 
-
+// Создаем новую строку в таблице 
 Vue.component('todo-item', {
   template: '\
     <tr>\
@@ -25,6 +23,7 @@ Vue.component('todo-item', {
   props: ['title','title2','title3','title4','title5']
 });
 
+// Принимаем введенные в input значения и методом addNewTodo добавляем в таблицу
 var app = new Vue({
   el: '#todo-list-example',
   data: {
@@ -68,15 +67,12 @@ var app = new Vue({
   }
 });
 
+// Добавляем возможность при вводе ИНН (или наименования) получать список подходящих компаний с dadata.ru, а также все данные компаний
 var abc = $("#inn").suggestions({
     token: "885e5f2b79daf9d5abaafcc802ac93d1908a053b",
     type: "PARTY",
-    /* Вызывается, когда пользователь выбирает одну из подсказок */
     onSelect: function(suggestion) {
         var nameOrg = suggestion.value;
-        console.log(suggestion.data.address.value);
-        console.log(suggestion.data.ogrn);
-        console.log(suggestion.data.inn);
         var ticks = suggestion.data.state.registration_date;
         var date = new Date(ticks);
         var month = date.getMonth()+1;
@@ -88,15 +84,10 @@ var abc = $("#inn").suggestions({
         month = pad(month,2);
         var date = date.getDate() + '.' + month + '.' + date.getFullYear();
         app.innOrganization = suggestion.data.inn;
-        /*
-        app.nameOrganization = suggestion.value;
-        app.addressOrganization = suggestion.data.address.value;
-        app.ogrnOrganization = suggestion.data.ogrn;
-        app.innOrganization = suggestion.data.inn;
-        app.dateRegistration = date;*/
     }
 }).suggestions();
 
+// При нажатии на "Применить" около ИНН, вставляет во все input значения с dadata.ru
 function complete(abc) {
     app.nameOrganization = abc.selection.value;
     app.addressOrganization = abc.selection.data.address.value;
