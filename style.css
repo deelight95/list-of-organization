@@ -1,0 +1,302 @@
+.poup {
+    position: absolute;
+    width:500px;
+    min-width: 500px;
+    height:580px;
+    margin: auto;
+    left: 30%;
+    right: 30%;
+    z-index: 900; 
+    background: white;
+    border: 2px solid #a38b70;
+ /*   background: rgba(120,55,150,.7);
+    box-shadow: 0 0 1px pink, 0 0 2px pink, 0 0 6px pink, 0 0 12px pink, inset 0 0 1px pink, inset 0 0 2px pink, inset 0 0 6px pink, inset 0 0 12px pink;
+*/
+}
+
+.poup input {
+    box-sizing: border-box;
+    width: 96%;
+    margin-left: 2%;
+    height: 54px;
+    padding: 9px 15px;
+    font: inherit;
+    color: inherit;
+    border: 2px solid #d5d5d5;
+    outline: none;
+}
+
+.container-inn-input {
+    width: 50%;
+    outline: none;
+}
+
+.container-inn-input input {
+    width: 92%;
+    margin-left: 4%;
+    outline: none;
+}
+
+
+.container-inn {
+    width: 100%;
+    position: relative;
+}
+
+.container-btn {
+    position: relative;
+}
+
+.add {    
+    position: absolute;
+    top: 15px;
+    left: 2%;
+    width: 45.5%;
+}
+
+.cls {
+    position: absolute;
+    top: 15px;
+    right: 2%;
+    width: 43.5%;
+}
+
+.poup label {    
+  display: inline-block;
+  padding: 5px 0;
+  padding-left: 17px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.poup input:hover {
+  border-color: #bebebe;
+}
+
+.poup input:focus {
+  border-color: #8d745a;
+}
+
+
+body {
+  min-width: 1040px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: #404040;
+  background-color: white;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background-color: #f2f2f2;
+}
+
+.main-div {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+
+/*table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+
+th, td:first-child {
+background: #AFCDE7;
+color: white;
+padding: 10px 20px;
+}
+
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+
+td {
+background: #D8E6F3;
+}
+
+th:first-child, td:first-child {
+text-align: left;
+}*/
+
+.section-title {
+      margin: 0;
+      margin-right: 180px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 55px;
+      font-family: "Georgia", serif;
+      color: #a38b70;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 55px;
+    font-family: "Georgia", serif;
+    color: white;    
+    margin: 0;
+    margin-bottom: 10px;
+    background: #a38b70;
+}
+
+.header {
+    position: relative;
+}
+
+.btn-header {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 200px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 30px;
+}
+
+table th {
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+table td {
+  border: 1px solid #d8d8d8;
+}
+
+table th,
+table td {
+  padding: 10px 17px;
+}
+
+table td:last-child {
+    padding: 0;
+    width: 146px;
+}
+/*
+
+.btn {
+}
+
+.btn:hover {
+  color: #8d745a;
+  border-color: #8d745a;
+}
+
+.btn:active {
+  color: rgba(141, 116, 90, 0.3);
+  border-color: #8d745a;
+}
+*/
+.btn {
+  color: #ffffff;
+  background-color: #a38b70;
+  display: inline-block;
+  padding: 10px;
+  font: inherit;
+  vertical-align: top;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  word-wrap: break-word;
+  border: 2px solid #a38b70;
+  border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: #8d745a;
+}
+
+.btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+#btn-complete {
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    width: 240px;
+}
+
+.btn-delete {
+    display: inline-block;
+    width: 146px;
+    padding: 10px;
+    font: inherit;
+    vertical-align: top;
+    text-align: center;
+    color: #a38b70;
+    text-transform: uppercase;
+    text-decoration: none;
+    word-wrap: break-word;
+    border-radius: 2px;
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+.btn-delete:hover {
+    color: #8d745a;
+}
+
+.btn-delete:active {
+    color: rgba(141, 116, 90, 0.3);
+    outline: none;
+}
+
+.btn-delete:focus {
+    outline: none;
+}
+
+/*
+body {    
+    background: url(retrowave.jpg) no-repeat;
+    background-position: center 0%;
+    background-size: cover;
+}
+
+.main-table tbody {
+    background: rgba(120,55,150,.7);
+    box-shadow: 0 0 1px pink, 0 0 2px pink, 0 0 6px pink, 0 0 12px pink, inset 0 0 1px pink, inset 0 0 2px pink, inset 0 0 6px pink, inset 0 0 12px pink;
+}
+
+.main-table td {
+    color: white;
+    padding: 0 0 5px 10px;
+    height: 35px;
+}
+
+.main-table th {
+    background: rgba(38,8,66,0.7);
+    color: white;
+    padding: 0 0 5px 10px;
+}
+
+.close {
+    background: 0;
+    border: 0;
+    color: white;
+}
+
+.close:hover {
+    font-size: 16px;
+    color: pink;
+    transition: all 0.3s ease;
+}*/
